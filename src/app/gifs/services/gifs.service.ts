@@ -11,10 +11,10 @@ export class GifsService {
 
   private _tagsHistory: string[] = [];
 
-  private apiKey: string = 'ZytX2JiYgGLFL2BaRGp2LbTw129Ce2Oi';
-  private serviceUrl: string = 'https://api.giphy.com/v1/gifs';
+  private readonly apiKey: string = 'ZytX2JiYgGLFL2BaRGp2LbTw129Ce2Oi';
+  private readonly serviceUrl: string = 'https://api.giphy.com/v1/gifs';
 
-  constructor(private http: HttpClient) { }
+  constructor(private readonly http: HttpClient) { }
 
 
   get tagsHistory(): string[]{
